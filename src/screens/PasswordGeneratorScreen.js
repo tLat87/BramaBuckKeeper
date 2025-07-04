@@ -44,10 +44,6 @@ const PasswordGeneratorScreen = () => {
             resizeMode="cover"
         >
             <View style={styles.container}>
-                <View style={styles.dropdownPlaceholder}>
-                    <Text style={styles.dropdownText}>Password Settings</Text>
-                    {/*<Image source={require('../assets/icons/chevron_down_icon.png')} style={styles.dropdownIcon} />*/}
-                </View>
 
                 <Text style={styles.header}>Password Generator</Text>
 

@@ -94,7 +94,9 @@ const FolderContentScreen = () => {
                 <Image source={require('../assets/img/Copy.png')} style={styles.passwordActionIcon} />
             </TouchableOpacity>
             <TouchableOpacity onPress={() => handleDeletePassword(item)} style={styles.passwordActionButton}>
-                <Image source={require('../assets/img/Copy.png')} style={styles.passwordActionIcon} />
+                <Text style={{color:'red', fontWeight: 'bold'}}>
+                    Delete
+                </Text>
             </TouchableOpacity>
         </View>
     );
@@ -107,7 +109,9 @@ const FolderContentScreen = () => {
         >
             <View style={styles.headerContainer}>
                 <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
-                    <Image source={require('../assets/img/Copy.png')} style={styles.backIconImage} />
+                    <Text style={{color:'#fff', fontWeight: 'bold'}}>
+                        Go Back
+                    </Text>
                 </TouchableOpacity>
                 <Text style={styles.header}>{currentFolder.name}</Text>
             </View>
@@ -146,6 +150,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         paddingHorizontal: 20,
+        marginBottom: 20,
         paddingTop: 60,
         paddingBottom: 20,
         backgroundColor: 'rgba(0,0,0,0.3)',

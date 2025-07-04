@@ -103,9 +103,9 @@ const FolderScreen = () => {
         <TouchableOpacity style={styles.folderItem} onPress={() => handleFolderPress(item)}>
             <Image source={require('../assets/img/FolderWithFiles.png')} style={styles.folderIconImage} />
             <Text style={styles.folderName}>{item.name} ({item.passwordCount || 0})</Text>
-            <TouchableOpacity style={styles.editIconContainer} onPress={() => console.log('Edit folder', item.id)}>
-                <Image source={require('../assets/img/LockPassword.png')} style={styles.editIconImage} />
-            </TouchableOpacity>
+            {/*<TouchableOpacity style={styles.editIconContainer} onPress={() => console.log('Edit folder', item.id)}>*/}
+            {/*    <Image source={require('../assets/img/LockPassword.png')} style={styles.editIconImage} />*/}
+            {/*</TouchableOpacity>*/}
         </TouchableOpacity>
     );
 
