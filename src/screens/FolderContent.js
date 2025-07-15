@@ -1,4 +1,3 @@
-// screens/FolderContentScreen.js
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, FlatList, ImageBackground, Image, Alert, Clipboard } from 'react-native';
 import { useNavigation, useRoute, useIsFocused } from '@react-navigation/native';
